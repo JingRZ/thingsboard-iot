@@ -1,0 +1,49 @@
+{
+  "entityType" : "ENTITY_VIEW",
+  "entity" : {
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "endTimeMs" : 0,
+    "entityId" : {
+      "entityType" : "ASSET",
+      "id" : "39caa0a0-a9cb-11ee-b4a7-153de476a24b"
+    },
+    "externalId" : null,
+    "keys" : {
+      "attributes" : {
+        "cs" : null,
+        "sh" : null,
+        "ss" : null
+      },
+      "timeseries" : null
+    },
+    "name" : "aula1",
+    "startTimeMs" : 0,
+    "type" : "aula",
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "id" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "72ab9a30-aa6d-11ee-b117-153de476a24b"
+    }
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ENTITY_VIEW",
+      "id" : "72ab9a30-aa6d-11ee-b117-153de476a24b"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "750b6d50-a9d7-11ee-b4a7-153de476a24b"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

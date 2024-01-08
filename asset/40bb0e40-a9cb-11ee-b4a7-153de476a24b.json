@@ -1,0 +1,48 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "d15ee850-a9ca-11ee-b4a7-153de476a24b"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "40bb0e40-a9cb-11ee-b4a7-153de476a24b"
+    },
+    "label" : null,
+    "name" : "aula5",
+    "type" : "Edificio FDI"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "780fc4c0-a9b8-11ee-b4a7-153de476a24b"
+    },
+    "to" : {
+      "entityType" : "ASSET",
+      "id" : "40bb0e40-a9cb-11ee-b4a7-153de476a24b"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "coordinates",
+      "lastUpdateTs" : 1704240629495,
+      "longValue" : null,
+      "strValue" : "[40.452709754436476, -3.7331161316756947]"
+    } ]
+  }
+}
