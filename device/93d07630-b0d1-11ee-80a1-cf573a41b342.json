@@ -1,7 +1,7 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : null,
+    "additionalInfo" : { },
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
@@ -22,26 +22,26 @@
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "b52ffe10-b08e-11ee-ad54-153de476a24b"
+      "id" : "93d07630-b0d1-11ee-80a1-cf573a41b342"
     },
     "label" : null,
-    "name" : "esp32A",
+    "name" : "esp32_salon_actos",
     "softwareId" : null,
     "type" : "esp32"
   },
   "credentials" : {
-    "credentialsId" : "BMOeroBVmYkYANWXX8PW",
+    "credentialsId" : "i1OaBrLvbLX6mNCPCAW4",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1705009278113,
+      "lastUpdateTs" : 1705013124622,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -49,48 +49,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1705007064596,
-      "longValue" : 1705007064591,
+      "lastUpdateTs" : 1705013124623,
+      "longValue" : 1705013124620,
       "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "lastActivityTime",
-      "lastUpdateTs" : 1705013311392,
-      "longValue" : 1705013311138,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "lastConnectTime",
-      "lastUpdateTs" : 1705009698335,
-      "longValue" : 1705009698334,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1705009372560,
-      "longValue" : 1705009372560,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "provisionState",
-      "lastUpdateTs" : 1704983746705,
-      "longValue" : null,
-      "strValue" : "provisioned"
     } ],
     "SHARED_SCOPE" : [ {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_tag",
-      "lastUpdateTs" : 1704990112771,
+      "lastUpdateTs" : 1705012466989,
       "longValue" : null,
       "strValue" : "ota1_hello_world 1.0.1"
     }, {
@@ -98,7 +66,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_title",
-      "lastUpdateTs" : 1704990112771,
+      "lastUpdateTs" : 1705012466989,
       "longValue" : null,
       "strValue" : "ota1_hello_world"
     }, {
@@ -106,7 +74,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_url",
-      "lastUpdateTs" : 1704990112771,
+      "lastUpdateTs" : 1705012466989,
       "longValue" : null,
       "strValue" : "https://github.com/JingRZ/ota-update/raw/main/hello_world.bin"
     }, {
@@ -114,7 +82,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_version",
-      "lastUpdateTs" : 1704990112771,
+      "lastUpdateTs" : 1705012466989,
       "longValue" : null,
       "strValue" : "1.0.1"
     } ]
