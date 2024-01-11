@@ -28,22 +28,16 @@
         "provisionDeviceSecret" : "03mt3l6srz9bijscmr9n"
       },
       "transportConfiguration" : {
-        "type" : "MQTT",
-        "deviceAttributesSubscribeTopic" : "v1/devices/me/attributes",
-        "deviceAttributesTopic" : "v1/devices/me/attributes",
-        "deviceTelemetryTopic" : "v1/devices/me/telemetry",
-        "sendAckOnValidationException" : false,
-        "sparkplug" : false,
-        "sparkplugAttributesMetricNames" : [ "Properties/*", "Device Control/*", "Node Control/*" ],
-        "transportPayloadTypeConfiguration" : {
-          "transportPayloadType" : "JSON"
-        }
+        "type" : "DEFAULT"
       }
     },
     "provisionDeviceKey" : "2lkpfzzf7bpy74iwzn66",
     "provisionType" : "ALLOW_CREATE_NEW_DEVICES",
-    "softwareId" : null,
-    "transportType" : "MQTT",
+    "softwareId" : {
+      "entityType" : "OTA_PACKAGE",
+      "id" : "e6b04180-afbb-11ee-8c05-153de476a24b"
+    },
+    "transportType" : "DEFAULT",
     "type" : "DEFAULT"
   },
   "relations" : [ ],

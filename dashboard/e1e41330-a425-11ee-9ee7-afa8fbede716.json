@@ -979,7 +979,7 @@
           "sizeY" : 2,
           "config" : {
             "targetDeviceAliases" : [ ],
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
@@ -1019,7 +1019,7 @@
             },
             "title" : "Control de parámetros de los sensores",
             "datasources" : [ ],
-            "targetDeviceAliasIds" : [ "6149c536-47ba-0d0b-604d-7f1410df8274" ],
+            "targetDeviceAliasIds" : [ "9d75997e-d97e-c898-25e9-45e5ab851867" ],
             "dropShadow" : true,
             "enableFullscreen" : true,
             "widgetStyle" : { },
@@ -1764,6 +1764,16 @@
             "resolveMultiple" : true,
             "deviceTypes" : [ "default" ],
             "deviceNameFilter" : ""
+          }
+        },
+        "9d75997e-d97e-c898-25e9-45e5ab851867" : {
+          "id" : "9d75997e-d97e-c898-25e9-45e5ab851867",
+          "alias" : "esp32B",
+          "filter" : {
+            "type" : "entityName",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityNameFilter" : "esp32"
           }
         }
       },
