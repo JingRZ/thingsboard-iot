@@ -19,8 +19,8 @@
   },
   "metaData" : {
     "connections" : [ {
-      "fromIndex" : 1,
-      "toIndex" : 20,
+      "fromIndex" : 0,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
@@ -43,16 +43,12 @@
       "toIndex" : 5,
       "type" : "RPC Request to Device"
     }, {
-      "fromIndex" : 2,
-      "toIndex" : 20,
-      "type" : "Attributes Updated"
-    }, {
       "fromIndex" : 3,
-      "toIndex" : 16,
+      "toIndex" : 12,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 16,
+      "toIndex" : 12,
       "type" : "Success"
     }, {
       "fromIndex" : 6,
@@ -60,51 +56,39 @@
       "type" : "Success"
     }, {
       "fromIndex" : 7,
-      "toIndex" : 15,
+      "toIndex" : 11,
       "type" : "Success"
     }, {
       "fromIndex" : 8,
+      "toIndex" : 7,
+      "type" : "Others"
+    }, {
+      "fromIndex" : 8,
       "toIndex" : 9,
-      "type" : "Success"
+      "type" : "Access token"
     }, {
       "fromIndex" : 9,
       "toIndex" : 10,
       "type" : "Success"
     }, {
-      "fromIndex" : 10,
-      "toIndex" : 11,
+      "fromIndex" : 9,
+      "toIndex" : 13,
       "type" : "Success"
     }, {
-      "fromIndex" : 12,
-      "toIndex" : 7,
-      "type" : "Others"
-    }, {
-      "fromIndex" : 12,
-      "toIndex" : 13,
-      "type" : "Access token"
-    }, {
-      "fromIndex" : 13,
+      "fromIndex" : 10,
       "toIndex" : 14,
       "type" : "Success"
     }, {
-      "fromIndex" : 13,
-      "toIndex" : 17,
+      "fromIndex" : 12,
+      "toIndex" : 8,
       "type" : "Success"
     }, {
       "fromIndex" : 14,
-      "toIndex" : 18,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 16,
-      "toIndex" : 12,
-      "type" : "Success"
-    }, {
-      "fromIndex" : 18,
-      "toIndex" : 19,
+      "toIndex" : 15,
       "type" : "Failure"
     }, {
-      "fromIndex" : 18,
-      "toIndex" : 19,
+      "fromIndex" : 14,
+      "toIndex" : 15,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -282,120 +266,6 @@
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCReplyNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1176,
-        "layoutY" : 513
-      },
-      "configuration" : {
-        "dataMapping" : {
-          "name" : "deviceName"
-        },
-        "ignoreNullStrings" : false,
-        "fetchTo" : "DATA"
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "30ef13a0-a901-11ee-af8f-afa8fbede716"
-      },
-      "name" : "Add device name to msg",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.metadata.TbGetOriginatorFieldsNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1466,
-        "layoutY" : 510
-      },
-      "configuration" : {
-        "restEndpointUrlPattern" : "http://localhost:9876/query?deviceName=${messageKey.deviceName}",
-        "requestMethod" : "GET",
-        "useSimpleClientHttpFactory" : false,
-        "parseToPlainText" : false,
-        "ignoreRequestBody" : false,
-        "enableProxy" : false,
-        "useSystemProxyProperties" : false,
-        "proxyScheme" : null,
-        "proxyHost" : null,
-        "proxyPort" : 0,
-        "proxyUser" : null,
-        "proxyPassword" : null,
-        "readTimeoutMs" : 0,
-        "maxParallelRequestsCount" : 0,
-        "headers" : {
-          "Content-Type" : "application/json"
-        },
-        "useRedisQueueForMsgPersistence" : false,
-        "trimQueue" : null,
-        "maxQueueSize" : null,
-        "credentials" : {
-          "type" : "anonymous"
-        }
-      },
-      "configurationVersion" : 1,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "30ef88d0-a901-11ee-af8f-afa8fbede716"
-      },
-      "name" : "Get device context",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1579,
-        "layoutY" : 670
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
-        "tbelScript" : "var newMsg = {\"deviceName\": msg.deviceName};\n\nreturn {msg: newMsg, metadata: metadata, msgType: msgType};"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "30efd6f0-a901-11ee-af8f-afa8fbede716"
-      },
-      "name" : "Fetch data",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
-    }, {
-      "additionalInfo" : {
-        "description" : "",
-        "layoutX" : 1565,
-        "layoutY" : 801
-      },
-      "configuration" : {
-        "scriptLang" : "TBEL",
-        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
-        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
-      },
-      "configurationVersion" : 0,
-      "createdTime" : 0,
-      "debugMode" : false,
-      "externalId" : null,
-      "id" : {
-        "entityType" : "RULE_NODE",
-        "id" : "30f04c20-a901-11ee-af8f-afa8fbede716"
-      },
-      "name" : "log",
-      "ruleChainId" : null,
-      "singletonMode" : false,
-      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
     }, {
       "additionalInfo" : {
         "description" : "",
@@ -599,21 +469,21 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 829,
-        "layoutY" : 41
+        "layoutX" : 1085,
+        "layoutY" : 237
       },
       "configuration" : {
-        "ruleChainId" : "3c3272d0-afb3-11ee-8c05-153de476a24b"
+        "ruleChainId" : "d7c36800-b3ee-11ee-88a9-45d164283d7f"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugMode" : false,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "901f9620-afb3-11ee-8c05-153de476a24b"
+        "id" : "5d1bf3e0-b3f0-11ee-88a9-45d164283d7f"
       },
-      "name" : "Check esp32 fw sync",
+      "name" : "LWT",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
