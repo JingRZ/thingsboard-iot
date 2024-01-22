@@ -20,7 +20,7 @@
   "metaData" : {
     "connections" : [ {
       "fromIndex" : 0,
-      "toIndex" : 16,
+      "toIndex" : 17,
       "type" : "Success"
     }, {
       "fromIndex" : 2,
@@ -44,11 +44,11 @@
       "type" : "RPC Request to Device"
     }, {
       "fromIndex" : 3,
-      "toIndex" : 12,
+      "toIndex" : 19,
       "type" : "Success"
     }, {
       "fromIndex" : 4,
-      "toIndex" : 12,
+      "toIndex" : 19,
       "type" : "Success"
     }, {
       "fromIndex" : 6,
@@ -80,7 +80,7 @@
       "type" : "Success"
     }, {
       "fromIndex" : 12,
-      "toIndex" : 8,
+      "toIndex" : 16,
       "type" : "Success"
     }, {
       "fromIndex" : 14,
@@ -89,6 +89,30 @@
     }, {
       "fromIndex" : 14,
       "toIndex" : 15,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 18,
+      "toIndex" : 20,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 21,
+      "type" : "GET_PUBLISH_FREQUENCY"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 22,
+      "type" : "GET_CONTEXT"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 18,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 20,
       "type" : "Success"
     } ],
     "firstNodeIndex" : 6,
@@ -269,8 +293,8 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1374,
-        "layoutY" : 324
+        "layoutX" : 1376,
+        "layoutY" : 320
       },
       "configuration" : {
         "scriptLang" : "TBEL",
@@ -379,12 +403,12 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1090,
-        "layoutY" : 321
+        "layoutX" : 1094,
+        "layoutY" : 410
       },
       "configuration" : {
         "scriptLang" : "JS",
-        "jsScript" : "//metadata.deviceName = msg.deviceName;\n\nreturn {msg: msg, metadata: metadata, msgType: msgType};",
+        "jsScript" : "return {msg: msg, metadata: metadata, msgType: msgType};",
         "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
       },
       "configurationVersion" : 0,
@@ -469,11 +493,13 @@
     }, {
       "additionalInfo" : {
         "description" : "",
-        "layoutX" : 1085,
-        "layoutY" : 237
+        "layoutX" : 1392,
+        "layoutY" : 413
       },
       "configuration" : {
-        "ruleChainId" : "d7c36800-b3ee-11ee-88a9-45d164283d7f"
+        "serviceIdMetaDataAttribute" : "serviceId",
+        "sessionIdMetaDataAttribute" : "sessionId",
+        "requestIdMetaDataAttribute" : "requestId"
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
@@ -481,12 +507,179 @@
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "5d1bf3e0-b3f0-11ee-88a9-45d164283d7f"
+        "id" : "7bb9f760-b545-11ee-a210-d545e74f7e1b"
       },
-      "name" : "LWT",
+      "name" : "RPC Reply",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCReplyNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1083,
+        "layoutY" : 284
+      },
+      "configuration" : {
+        "ruleChainId" : "12896aa0-b554-11ee-a210-d545e74f7e1b"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "b39e2430-b554-11ee-a210-d545e74f7e1b"
+      },
+      "name" : "Temperature Alarm",
       "ruleChainId" : null,
       "singletonMode" : false,
       "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1806,
+        "layoutY" : 609
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var tmp_freq = parseInt(metadata['shared_tmp_pub_freq']);\nvar hum_freq = parseInt(metadata['shared_hum_pub_freq']);\nvar eco2_freq = parseInt(metadata['shared_eco2_pub_freq']);\nvar tvoc_freq = parseInt(metadata['shared_tvoc_pub_freq']);\n\nvar resp = {\n    \"type\": \"ALL_PUB_FREQ\",\n    \"tmp_freq\": tmp_freq,\n    \"hum_freq\": hum_freq,\n    \"eco2_freq\": eco2_freq,\n    \"tvoc_freq\": tvoc_freq,\n};\n\nreturn {msg: resp, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d6126800-b8a1-11ee-af5b-d545e74f7e1b"
+      },
+      "name" : "PROCESS PUB FREQ",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1133,
+        "layoutY" : 548
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType === 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);",
+        "tbelScript" : "var method = msg.method;\n\nswitch (method) {\n    case 'G_PUB_FREQ':\n        return ['GET_PUBLISH_FREQUENCY'];\n    case 'G_CTX':\n        return ['GET_CONTEXT'];\n    default:\n        break;\n}\n\nreturn ['Others'];"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "d6152720-b8a1-11ee-af5b-d545e74f7e1b"
+      },
+      "name" : "GET METHOD",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 2069,
+        "layoutY" : 537
+      },
+      "configuration" : {
+        "serviceIdMetaDataAttribute" : "serviceId",
+        "sessionIdMetaDataAttribute" : "sessionId",
+        "requestIdMetaDataAttribute" : "requestId"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "7ccbea70-b8a4-11ee-af5b-d545e74f7e1b"
+      },
+      "name" : "RPC Reply",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCReplyNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1467,
+        "layoutY" : 609
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ "hum_pub_freq", "tmp_pub_freq", "tvoc_pub_freq", "eco2_pub_freq" ],
+        "serverAttributeNames" : [ ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "aa67dad0-b8ad-11ee-af5b-d545e74f7e1b"
+      },
+      "name" : "GET PUBLISH FREQUENCY ATTRS",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1465,
+        "layoutY" : 501
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : null,
+        "serverAttributeNames" : [ "floor", "room" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4f57dc50-b8ba-11ee-af5b-d545e74f7e1b"
+      },
+      "name" : "GET CTX ATTR",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1799,
+        "layoutY" : 493
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var room = metadata['ss_room'];\nvar floor = metadata['ss_floor'];\n\nvar resp = {\n    \"type\": \"CTX\",\n    \"ctx\": floor + \"/\" + room,\n};\n\nreturn {msg: resp, metadata: metadata, msgType: msgType};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : false,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4f580360-b8ba-11ee-af5b-d545e74f7e1b"
+      },
+      "name" : "PROCESS CTX",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
     } ],
     "ruleChainConnections" : null
   },

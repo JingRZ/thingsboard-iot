@@ -90,7 +90,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_tag",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "ota1_hello_world 1.0.1"
     }, {
@@ -98,7 +98,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_title",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "ota1_hello_world"
     }, {
@@ -106,7 +106,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_url",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "https://github.com/JingRZ/ota-update/raw/main/hello_world.bin"
     }, {
@@ -114,7 +114,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_version",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "1.0.1"
     } ]

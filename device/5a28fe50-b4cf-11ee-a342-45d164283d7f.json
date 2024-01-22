@@ -1,7 +1,7 @@
 {
   "entityType" : "DEVICE",
   "entity" : {
-    "additionalInfo" : { },
+    "additionalInfo" : null,
     "customerId" : {
       "entityType" : "CUSTOMER",
       "id" : "13814000-1dd2-11b2-8080-808080808080"
@@ -22,15 +22,15 @@
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "018d1cb1-b3e2-11ee-88a9-45d164283d7f"
+      "id" : "5a28fe50-b4cf-11ee-a342-45d164283d7f"
     },
     "label" : null,
-    "name" : "esp32_aula6",
+    "name" : "esp32A",
     "softwareId" : null,
     "type" : "esp32"
   },
   "credentials" : {
-    "credentialsId" : "MRRxeMw1DpQZD5TNexsM",
+    "credentialsId" : "XQEWd1MZHpTZN4KZcu3r",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -41,73 +41,25 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1705441490626,
+      "lastUpdateTs" : 1705451930669,
       "longValue" : null,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "floor",
-      "lastUpdateTs" : 1705349376662,
-      "longValue" : 1,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1705441490627,
-      "longValue" : 1705441490626,
+      "lastUpdateTs" : 1705451930670,
+      "longValue" : 1705451930669,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
-      "key" : "lastActivityTime",
-      "lastUpdateTs" : 1705440837521,
-      "longValue" : 1705440836871,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "lastConnectTime",
-      "lastUpdateTs" : 1705439977214,
-      "longValue" : 1705439977212,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1705440836888,
-      "longValue" : 1705440836888,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
-      "key" : "room",
-      "lastUpdateTs" : 1705349376662,
-      "longValue" : 6,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : 0.319436426806704,
-      "jsonValue" : null,
-      "key" : "xPos",
-      "lastUpdateTs" : 1705349587588,
+      "key" : "provisionState",
+      "lastUpdateTs" : 1705451316063,
       "longValue" : null,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : 0.9432322873027887,
-      "jsonValue" : null,
-      "key" : "yPos",
-      "lastUpdateTs" : 1705349587588,
-      "longValue" : null,
-      "strValue" : null
+      "strValue" : "provisioned"
     } ],
     "SHARED_SCOPE" : [ {
       "booleanValue" : null,

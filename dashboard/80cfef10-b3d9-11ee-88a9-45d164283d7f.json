@@ -695,7 +695,7 @@
               "selectedTab" : 1,
               "history" : {
                 "historyType" : 0,
-                "timewindowMs" : 120000,
+                "timewindowMs" : 3600000,
                 "interval" : 10000,
                 "fixedTimewindow" : {
                   "startTimeMs" : 1703533174187,
@@ -1854,6 +1854,350 @@
           "row" : 0,
           "col" : 0,
           "id" : "9e0064cb-5cfa-e155-4fad-25835b7023c7"
+        },
+        "a975810f-743a-4b1d-3e4b-0621fa45eebe" : {
+          "typeFullFqn" : "system.input_widgets.update_shared_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "16adc5bd-25af-2d6d-65ba-0ffccf7fe8ef",
+              "dataKeys" : [ {
+                "name" : "tmp_pub_freq",
+                "type" : "attribute",
+                "label" : "tmp_pub_freq",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.348591211678833
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1705419125402,
+                  "endTimeMs" : 1705505525402
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : false,
+              "minValue" : 0,
+              "maxValue" : null
+            },
+            "title" : "Temperature Publish Frequency",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "min",
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "thermostat",
+            "iconColor" : "rgb(244, 67, 54)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a975810f-743a-4b1d-3e4b-0621fa45eebe"
+        },
+        "8dccd536-f4f4-1319-ba7b-f5611abe6df4" : {
+          "typeFullFqn" : "system.input_widgets.update_shared_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "16adc5bd-25af-2d6d-65ba-0ffccf7fe8ef",
+              "dataKeys" : [ {
+                "name" : "eco2_pub_freq",
+                "type" : "attribute",
+                "label" : "eco2_pub_freq",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.3191823484643317
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1705419125402,
+                  "endTimeMs" : 1705505525402
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : false,
+              "minValue" : 0,
+              "maxValue" : null
+            },
+            "title" : "CO2 Publish Frequency",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "min",
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "mdi:molecule-co2",
+            "iconColor" : "rgb(67, 91, 99)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8dccd536-f4f4-1319-ba7b-f5611abe6df4"
+        },
+        "df9fd1ff-9a9b-06bb-007d-79844c815a31" : {
+          "typeFullFqn" : "system.input_widgets.update_shared_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "16adc5bd-25af-2d6d-65ba-0ffccf7fe8ef",
+              "dataKeys" : [ {
+                "name" : "hum_pub_freq",
+                "type" : "attribute",
+                "label" : "hum_pub_freq",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.27368724303163305
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1705419125402,
+                  "endTimeMs" : 1705505525402
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : false,
+              "minValue" : 0,
+              "maxValue" : null
+            },
+            "title" : "Humidity Publish Frequency",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "min",
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "mdi:water-percent",
+            "iconColor" : "rgb(4, 138, 211)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "df9fd1ff-9a9b-06bb-007d-79844c815a31"
+        },
+        "a9b2e18c-3767-cbf3-46b8-41c6e0e83387" : {
+          "typeFullFqn" : "system.input_widgets.update_shared_integer_attribute",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "16adc5bd-25af-2d6d-65ba-0ffccf7fe8ef",
+              "dataKeys" : [ {
+                "name" : "tvoc_pub_freq",
+                "type" : "attribute",
+                "label" : "tvoc_pub_freq",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6788377083641894
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1705419125402,
+                  "endTimeMs" : 1705505525402
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "widgetTitle" : "",
+              "showLabel" : false,
+              "isRequired" : true,
+              "requiredErrorMessage" : "",
+              "showResultMessage" : false,
+              "minValue" : 0,
+              "maxValue" : null
+            },
+            "title" : "VOC Publish Frequency",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "showTitleIcon" : true,
+            "titleTooltip" : "",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "min",
+            "decimals" : 0,
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "air",
+            "iconColor" : "rgb(139, 195, 74)",
+            "iconSize" : "24px"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a9b2e18c-3767-cbf3-46b8-41c6e0e83387"
         }
       },
       "states" : {
@@ -1934,10 +2278,34 @@
                   "col" : 6
                 },
                 "9e0064cb-5cfa-e155-4fad-25835b7023c7" : {
-                  "sizeX" : 6,
-                  "sizeY" : 4,
+                  "sizeX" : 7,
+                  "sizeY" : 3,
                   "row" : 0,
                   "col" : 12
+                },
+                "a975810f-743a-4b1d-3e4b-0621fa45eebe" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 4,
+                  "col" : 12
+                },
+                "8dccd536-f4f4-1319-ba7b-f5611abe6df4" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 7,
+                  "col" : 12
+                },
+                "df9fd1ff-9a9b-06bb-007d-79844c815a31" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 4,
+                  "col" : 19
+                },
+                "a9b2e18c-3767-cbf3-46b8-41c6e0e83387" : {
+                  "sizeX" : 7,
+                  "sizeY" : 3,
+                  "row" : 7,
+                  "col" : 19
                 }
               },
               "gridSettings" : {

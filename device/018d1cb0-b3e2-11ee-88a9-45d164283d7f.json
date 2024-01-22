@@ -41,7 +41,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1705356878239,
+      "lastUpdateTs" : 1705705686188,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -57,32 +57,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1705356878240,
-      "longValue" : 1705356878238,
+      "lastUpdateTs" : 1705705686190,
+      "longValue" : 1705705686188,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1705356274508,
-      "longValue" : 1705356271505,
+      "lastUpdateTs" : 1705705040140,
+      "longValue" : 1705705038777,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1705355931015,
-      "longValue" : 1705355931015,
+      "lastUpdateTs" : 1705704677309,
+      "longValue" : 1705704677309,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1705356271529,
-      "longValue" : 1705356271529,
+      "lastUpdateTs" : 1705705038779,
+      "longValue" : 1705705038779,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -114,7 +114,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_tag",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "ota1_hello_world 1.0.1"
     }, {
@@ -122,7 +122,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_title",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "ota1_hello_world"
     }, {
@@ -130,7 +130,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_url",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "https://github.com/JingRZ/ota-update/raw/main/hello_world.bin"
     }, {
@@ -138,7 +138,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_version",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "1.0.1"
     } ]

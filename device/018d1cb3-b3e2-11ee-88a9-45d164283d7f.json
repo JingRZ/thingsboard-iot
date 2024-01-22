@@ -41,7 +41,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1705349978171,
+      "lastUpdateTs" : 1705917870051,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -57,9 +57,41 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1705349978207,
-      "longValue" : 1705349978170,
+      "lastUpdateTs" : 1705917872679,
+      "longValue" : 1705917870047,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1705887527101,
+      "longValue" : 1705887524562,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1705887414121,
+      "longValue" : 1705887414121,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1705874135428,
+      "longValue" : 1705874135428,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "pub_freq",
+      "lastUpdateTs" : 1705505605292,
+      "longValue" : null,
+      "strValue" : "123"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -89,8 +121,24 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "eco2_pub_freq",
+      "lastUpdateTs" : 1705868552461,
+      "longValue" : 10,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "hum_pub_freq",
+      "lastUpdateTs" : 1705883446025,
+      "longValue" : 20,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "sw_tag",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "ota1_hello_world 1.0.1"
     }, {
@@ -98,7 +146,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_title",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "ota1_hello_world"
     }, {
@@ -106,7 +154,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_url",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "https://github.com/JingRZ/ota-update/raw/main/hello_world.bin"
     }, {
@@ -114,9 +162,25 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "sw_version",
-      "lastUpdateTs" : 1705349376603,
+      "lastUpdateTs" : 1705507304996,
       "longValue" : null,
       "strValue" : "1.0.1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tmp_pub_freq",
+      "lastUpdateTs" : 1705883442628,
+      "longValue" : 20,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "tvoc_pub_freq",
+      "lastUpdateTs" : 1705868564648,
+      "longValue" : 10,
+      "strValue" : null
     } ]
   }
 }
